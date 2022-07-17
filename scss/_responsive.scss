@@ -1,0 +1,291 @@
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .header{
+    display: none;
+  }
+
+  .responsive__header{
+    display: block;
+    background-image: url('/dist/assets/img/bg.png');
+
+    .humburgerIcon{
+      width: 40px;
+      height: 40px;
+      padding: 8px;
+    }
+  }
+
+  .indexSection{
+    background-image: none;
+    padding-top: 20px;
+
+    .container{
+      flex-direction: column;
+      width: 100% !important;
+
+      .indexSection__content{
+        &--title{
+          width: 90%;
+          margin: 24px 16px;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 48px;
+          line-height: 50px;
+        }
+        &--description{
+          width: 95%;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 20px;
+          margin-bottom: 32px;
+          margin-left: 16px;
+        }
+        &--button{
+          width: 170px;
+          height: 40px;
+          padding: 0;
+          margin: 0 0 40px 16px;
+          font-size: 18px;
+        }
+      }
+
+      .indexSection__picture{
+        margin-top: 32px;
+        &--shape{
+          width: 100%;
+          height: 228px;
+          padding: 0;
+          margin: 0;
+          position: absolute;
+        }
+
+        &--img{
+          width: 328px;
+          height: 338px;
+          left: 13px;
+          top: -32px;
+        }
+      }
+    }
+  }
+
+  .team{
+    padding-top: 325px;
+
+    .container{
+      overflow: hidden;
+      width: 90% !important;
+    }
+
+    &__title{
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 32px;
+    }
+    &__ourTeam{
+      flex-direction: column;
+
+      &--content{
+        width: 80%;
+        height: 304px;
+        flex-basis: 0;
+
+        span{
+          display: inline-block;
+          font-style: normal;
+          font-weight: bolder;
+          font-size: 150px;
+          line-height: 120px;
+          padding-bottom: 40px;
+        }
+
+        p{
+          font-style: normal;
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 32px;
+        }
+      }
+      &--img{
+        div{
+          width: 50%;
+          height: 162px;
+        }
+      }
+    }
+  }
+
+  .comment{
+    padding-top: 80px;
+    margin-left: 19px;
+    margin-bottom: 80px;
+
+    &__header{
+      margin-bottom: 32px;
+      margin-left: 42px;
+      margin-right: 16px;
+      &--title{
+
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+      }
+      &--circle{
+        display: none;
+      }
+    }
+    &__card{
+      margin-left: 0;
+      flex-direction: column;
+      position: relative;
+
+      .cart{
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        width: 245px;
+        &__body{
+          p{
+            width: 100%;
+          }
+        }
+        &:first-child{
+          display: block;
+        }
+      }
+    }
+    &__btn{
+      margin-left: 120px;
+      margin-top: 308px;
+    }
+  }
+
+  .ourWork{
+    margin-top: 88px;
+
+    &__headerTitle{
+      padding: 40px 0;
+      h2{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+      }
+    }
+    &__titles{
+      flex-direction: column;
+      &--title{
+        .title__desc{
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 24px;
+        }
+        .title__number{
+          font-style: normal;
+          font-weight: 700;
+          font-size: 52px;
+          line-height: 28px;
+        }
+      }
+    }
+    &__cards{
+      &--card{
+        &:last-child{
+          padding-bottom: 40px;
+        }
+        .card-title{
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 24px;
+        }
+
+        .card-description{
+          p{
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .contact{
+    &__picture{
+      width: 328px;
+      height: 217px;
+      right: 16px;
+      left: 16px;
+      top: -40px;
+    }
+    &__form{
+      top: 211px;
+      left: 16px;
+      width: 328px;
+      height: 240px;
+      padding: 20px;
+
+      &--title{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+        width: 100%;
+      }
+      &--control{
+        input{
+          width: 288px;
+          height: 40px;
+          margin-bottom: 10px;
+        }
+        button{
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .footer{
+    height: auto;
+    p{
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      width: 90%;
+      text-align: center;
+    }
+
+    ul{
+      flex-direction: column;
+      align-items: center;
+      li{
+        margin-bottom: 10px;
+      }
+    }
+
+    .footerContact{
+      flex-direction: column;
+      align-items: center;
+
+      .contactUs{
+        flex-direction: column;
+        margin-bottom: 10px;
+
+        .footer__phone,.footer__mail{
+          flex-direction: column;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
