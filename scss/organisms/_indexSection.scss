@@ -1,0 +1,80 @@
+     .indexSection {
+             background-image: url('/dist/assets/img/bg.png');
+             height: 465px;
+             width: 100%;
+             padding-top: 154px;
+             position: relative;
+
+             .container {
+                 display: flex;
+             }
+
+             &__content {
+                 flex-grow: 1;
+                 flex-basis: 60%;
+
+                 &--title {
+                     width: 50%;
+                     font-style: normal;
+                     font-weight: 700;
+                     font-size: 50px;
+                     line-height: 100px;
+
+                     span {
+                         color: $primary;
+                     }
+                 }
+
+                 &--description {
+                     margin-top: 20px;
+                     width: 50%;
+                     font-style: normal;
+                     font-weight: 500;
+                     font-size: 13px;
+                     line-height: 24px;
+                 }
+
+                 &--button {
+                     margin-top: 12px;
+
+                     span {
+                         display: inline-block;
+                         padding: 0 20px 0 25px;
+                         font-style: normal;
+                         font-weight: 400;
+                         font-size: 20px;
+                         line-height: 24px;
+                     }
+
+                     img {
+                         width: 24px;
+                         height: 24px;
+                     }
+                 }
+             }
+
+             &__picture {
+                 position: relative;
+                 flex-grow: 2;
+                 flex-basis: 40%;
+
+                 &--img {
+                     position: absolute;
+                     top: 29px;
+                     left: 20px;
+                     width: 383px;
+
+                     img {
+                         width: 100%;
+                     }
+                 }
+
+                 &--shape {
+                     width: 240px;
+
+                     img {
+                         width: 100%;
+                     }
+                 }
+             }
+         }

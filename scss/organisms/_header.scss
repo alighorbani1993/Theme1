@@ -1,0 +1,29 @@
+.header {
+  display: inline-flex;
+  width: 84%;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 30px;
+  left: 81px;
+  z-index: 2;
+
+  &__logo {
+    font-weight: 600;
+    font-size: 28px;
+  }
+
+  &__nav {
+    ul {
+      li {
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+}
+
+.responsive__header {
+  display: none;
+}

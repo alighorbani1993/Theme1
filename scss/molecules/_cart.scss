@@ -1,0 +1,60 @@
+.cart {
+  box-shadow: 0 0 30px rgba(13, 107, 106, 0.1);
+  width: 280px !important;
+  height: 225px;
+  padding: 22px;
+  display: block !important;
+  margin-right: 30px;
+
+
+  &__header {
+    display: flex !important;
+    align-items: center;
+    padding-bottom: 30px;
+
+    img {
+      padding-right: 10px;
+      width: 60px !important;
+      height: 60px !important;
+      border-radius: 30px;
+    }
+
+    &--title {
+      .name {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 20px;
+      }
+
+      .description {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: $gray;
+      }
+    }
+  }
+
+  &__body {
+    p {
+      width: 275px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: $dark-gray;
+      margin-bottom: 30px;
+    }
+
+    &--stars {
+      span {
+        display: inline-block !important;
+        width: 20px;
+        height: 18.6px;
+
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
