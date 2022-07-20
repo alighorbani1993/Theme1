@@ -1,12 +1,34 @@
 .footer {
+  @include for-size(phone-only) {
+    height: auto;
+    overflow-x: hidden;
+  }
   height: 576px;
   background: $primary;
   position: relative;
 
   &__line {
+    @include for-size(phone-only) {
+      display: none;
+    }
     width: 100%;
     position: absolute;
     top: 50px;
+  }
+
+  &__lineResponsive {
+    @include for-size(phone-only) {
+      display: block;
+    }
+    display: none;
+    width: 379px;
+    height: 90px;
+    top: 16px;
+    position: absolute;
+
+    &:nth-child(2){
+      top: 75%;
+    }
   }
 
   h3 {
@@ -20,6 +42,14 @@
   }
 
   P {
+    @include for-size(phone-only) {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      width: 90%;
+      text-align: center;
+    }
     width: 50%;
     margin: auto;
     color: $light-gray;
@@ -51,20 +81,45 @@
   }
 
   ul {
+    @include for-size(phone-only) {
+      flex-direction: column;
+      align-items: center;
+    }
     color: $white;
     margin-top: 100px;
     justify-content: space-evenly;
+
+    li{
+      @include for-size(phone-only) {
+        margin-bottom: 10px;
+        padding: 4px 20px;
+
+      }
+    }
   }
 
   .footerContact {
+    @include for-size(phone-only) {
+      flex-direction: column;
+      align-items: center;
+    }
     margin-top: 100px;
     display: flex;
     justify-content: space-around;
 
     .contactUs {
+      @include for-size(phone-only) {
+        flex-direction: column;
+        margin-bottom: 10px;
+      }
       display: flex;
 
       .footer__phone {
+        @include for-size(phone-only) {
+          flex-direction: column;
+          margin-bottom: 30px;
+          margin-right: 0;
+        }
         display: flex;
         align-items: center;
         margin-right: 30px;
@@ -100,6 +155,11 @@
       }
 
       .footer__mail {
+        @include for-size(phone-only) {
+          flex-direction: column;
+          margin-bottom: 10px;
+          margin-right: 0;
+        }
         display: flex;
         align-items: center;
         margin-right: 30px;
@@ -124,6 +184,10 @@
           display: flex;
           flex-direction: column;
 
+          @include for-size(phone-only) {
+            align-items: center;
+          }
+
           .text {
             color: $light-gray;
           }
@@ -136,6 +200,9 @@
     }
 
     .footer__copyright {
+      @include for-size(phone-only) {
+        margin-bottom: 27px;
+      }
       color: $light-gray;
     }
   }

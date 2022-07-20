@@ -1,4 +1,7 @@
 .ourWork {
+  @include for-size(phone-only) {
+    margin-top: 88px;
+  }
   background-image: url('/dist/assets/img/bg.png');
   height: 100%;
   width: 100%;
@@ -6,9 +9,18 @@
   padding-bottom: 50px;
 
   &__headerTitle {
+    @include for-size(phone-only) {
+      padding: 40px 0;
+    }
     padding: 90px 0;
 
     h2 {
+      @include for-size(phone-only) {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+      }
       position: relative;
       font-weight: 700;
       font-size: 36px;
@@ -29,50 +41,71 @@
 
   }
 
-  &__titles {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 2px solid $light-gray;
-    padding-bottom: 40px;
-
-    &--title {
-      display: flex;
-      align-items: center;
-      width: 339px;
-      position: relative;
-
-      .title__desc {
-        width: 50% !important;
-        font-weight: 700;
-        font-size: 22px;
-        line-height: 28px;
-        z-index: 2;
-        //width: 100px;
-      }
-
-      .title__number {
-        font-weight: 700;
-        font-size: 52px;
-        line-height: 28px;
-        color: $light-gray;
-        position: absolute;
-        left: 125px;
-      }
-    }
-
-    &--title:nth-child(2) {
-      .title__number {
-        left: 55px;
-      }
-    }
-  }
-
   &__cards {
     display: flex;
     flex-wrap: wrap;
 
+    &--sections{
+      .ourWork__titles--title{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 40px;
+        position: relative;
+        border-bottom: 2px solid $light-gray;
+
+
+        .title__desc {
+          @include for-size(phone-only) {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 24px;
+          }
+          width: 50% !important;
+          font-weight: 700;
+          font-size: 22px;
+          line-height: 28px;
+          z-index: 2;
+        }
+
+        .title__number {
+          @include for-size(phone-only) {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 52px;
+            line-height: 28px;
+            left: 95px;
+          }
+          font-weight: 700;
+          font-size: 52px;
+          line-height: 28px;
+          color: $light-gray;
+          position: absolute;
+          left: 125px;
+        }
+      }
+    }
+
+    .ourWork__sectionTwo{
+      .title__desc{
+        font-size: 27px;
+      }
+
+      .title__number {
+        @include for-size(phone-only) {
+          left: 65px;
+        }
+        left: 55px;
+      }
+    }
+
     &--card {
+        &:last-child{
+          @include for-size(phone-only) {
+            padding-bottom: 40px;
+          }
+        }
       display: flex;
       margin: 50px 65px 0 0;
 
@@ -94,6 +127,12 @@
       }
 
       .card-title {
+        @include for-size(phone-only) {
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 24px;
+        }
         color: $black;
         font-weight: 600;
         font-size: 18px;
@@ -104,10 +143,19 @@
 
       .card-description {
         p {
+          @include for-size(phone-only) {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            width: 100%;
+          }
           margin-bottom: 20px;
           width: 310px;
         }
       }
     }
   }
+
 }
+

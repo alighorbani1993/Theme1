@@ -5,7 +5,11 @@
   padding: 22px;
   display: block !important;
   margin-right: 30px;
+  text-align: left !important;
 
+  &:first-child{
+    margin-left: 40px !important;
+  }
 
   &__header {
     display: flex !important;

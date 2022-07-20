@@ -1,15 +1,31 @@
 .comment {
+  @include for-size(phone-only) {
+    padding-top: 80px;
+    margin-left: 19px;
+    margin-bottom: 80px;
+  }
   padding-top: 200px;
 
   &__header {
+    @include for-size(phone-only) {
+      margin-bottom: 32px;
+      margin-left: 42px;
+      margin-right: 16px;
+    }
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    width: 80%;
-    margin-left: 17px;
+    width: 73%;
+    margin-left: 183px;
 
     &--title {
-      font-style: normal;
+      @include for-size(phone-only) {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 28px;
+      }
+        font-style: normal;
       font-weight: 700;
       font-size: 36px;
       line-height: 40px;
@@ -29,9 +45,13 @@
     &--circle {
       display: flex;
 
-      span {
-        &:first-child {
-          background-color: $primary
+      @include for-size(phone-only) {
+        display: none;
+      }
+
+      span.pagination {
+          &:first-child {
+          background-color: $primary;
         }
 
         margin: 0 2px;
@@ -44,25 +64,22 @@
   }
 
   &__card {
+    @include for-size(phone-only) {
+      width: 100% !important;
+    }
     margin-top: 40px;
     height: 310px;
-    //margin-left: 145px;
-    //overflow-x: hidden;
-
-    //.swiper-wrapper{
-    //    width: 100vw !important;
-    //    padding: 22px 0 !important;
-    //    display: inline-flex !important;
-    //    overflow: unset;
-    //    //justify-content: space-around;
-    //}
-
+    width: 90% !important;
+    margin-right: 0;
   }
 
   &__btn {
-    display: flex;
+    @include for-size(phone-only) {
+      justify-content: center;
+    }
+
+      display: flex;
     margin-top: 40px;
-    margin-left: 145px;
 
     &--prev {
       margin-right: 5px;

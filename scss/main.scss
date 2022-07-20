@@ -1,6 +1,10 @@
-// Generic
-@import 'reset';
-@import 'generic/Variables/variables';
+// Generic Folders :
+  // Reset Css
+  @import 'generic/reset';
+  //variables
+  @import 'generic/Variables/variables';
+  //Mixins
+  @import 'generic/Mixins/ResponsiveMixin';
 
 // Atoms
 @import "atoms/btn";
@@ -13,7 +17,7 @@
 
 //Organisms
 @import "organisms/header";
-@import 'organisms/indexSection';
+@import 'organisms/IndexSection';
 @import 'organisms/teamSection';
 @import 'organisms/commentSection';
 @import 'organisms/ourWorkSection';
@@ -22,10 +26,6 @@
 
 //Pages
 @import "pages/IndexPage";
-
-//Responsive Css
-@import 'responsive';
-
 
 // Plugins
 @import "Plugins/swiper";
